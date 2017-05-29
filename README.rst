@@ -2,10 +2,10 @@
 Red10 Python API
 ================
 
+The standalone python client and docker container for: https://redten.io
+
 .. figure:: http://i.imgur.com/65dsKzX.png
     :alt: Red10 distributed machine learning on Redis
-
-Python client for using: https://redten.io
 
 #.  To authenticate you will need valid login credentials
 
@@ -42,7 +42,23 @@ Python client for using: https://redten.io
 
         export ENV_REDTEN_FORECAST_EMAILS=
 
-#   Install required pips
+#.  If you want to use the docker container just run
+
+    Please note the docker image inflates to over 1 GB as it has the math libraries pandas and numpy installed.
+
+    Forecast:
+
+    ::
+
+        ./run-forecast.sh
+    
+    Predict:
+
+    ::
+
+        ./run-predict.sh
+
+#.  Install required pips
 
 
     ::
@@ -65,14 +81,14 @@ Python client for using: https://redten.io
 
         pip install redten
 
-#.  Run a prediction job
+#.  Run a forecast job
 
     ::
 
         ./bins/forecast.py <Dataset-Name>
 
 
-#.  Run a forecast job
+#.  Run a prediction job
 
     ::
 

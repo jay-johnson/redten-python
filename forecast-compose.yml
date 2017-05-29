@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+
+  # red10 client image
+  rtpy:
+    image: jayjohnson/redten-python:1.0.1
+    hostname: rtpy
+    environment:
+      - ENV_REDTEN_USER=${ENV_REDTEN_USER}
+      - ENV_REDTEN_PASS=${ENV_REDTEN_PASS}
+      - ENV_REDTEN_EMAIL=${ENV_REDTEN_EMAIL}
+      - ENV_REDTEN_URL=${ENV_REDTEN_URL}
+      - ENV_REDTEN_CSV_FILE=${ENV_REDTEN_CSV_FILE}
+      - ENV_REDTEN_FORECAST=/opt/work/docker/perform-forecast.sh
+    env_file:
+      - ./env/redten-prod.env
+    volumes:
+      # mount current directory into the container
+      - .:/opt/work
+      - ./docker/bashrc:/root/.bashrc
+    container_name: "rtpy"
+

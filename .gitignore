@@ -1,6 +1,6 @@
-*.pyc
-*.pyo
-*.swp
+redten.egg-info
 build
 dist
-redten.egg-info
+*.pyc
+*.swp
+*.eggs
