@@ -2,10 +2,10 @@
 Red10 Python API
 ================
 
-The standalone python client for using: https://redten.io
-
 .. figure:: http://i.imgur.com/65dsKzX.png
     :alt: Red10 distributed machine learning on Redis
+
+Python client for using: https://redten.io
 
 #.  To authenticate you will need valid login credentials
 
