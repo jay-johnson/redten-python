@@ -1,0 +1,5 @@
+pandas==0.20.0rc1
+requests>=2.13.0
+simplejson>=3.10.0
+uuid>=1.30
+unittest2>=1.1.0
