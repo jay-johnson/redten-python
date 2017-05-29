@@ -42,17 +42,17 @@ The standalone python client and docker container for: https://redten.io
 
         export ENV_REDTEN_FORECAST_EMAILS=
 
-#.  If you want to use the docker container just run
+#.  Using the ``redten-python`` docker container
 
     Please note the docker image inflates to over 1 GB as it has the math libraries pandas and numpy installed.
 
-    Forecast:
+    To run a forecast:
 
     ::
 
         ./run-forecast.sh
     
-    Predict:
+    Run predictions:
 
     ::
 
@@ -60,6 +60,7 @@ The standalone python client and docker container for: https://redten.io
 
 #.  Install required pips
 
+    If you do not want to use the docker container, here's how to setup the local environment.
 
     ::
 
